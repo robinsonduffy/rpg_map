@@ -33,11 +33,11 @@ $(document).ready(function(){
         success : function(){
           window.location.reload();
         }
-     }).Touchable().live("doubleTap", function(){
-            alert('double tap')
-          })
+     });
     }
-  }).;
+  }).Touchable().live("doubleTap", function(){
+            alert('double tap')
+          });
 
   $("#farb").farbtastic('#current-color')
 
