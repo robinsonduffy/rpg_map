@@ -26,7 +26,7 @@ class MapController < ApplicationController
 
   def new_block
     map = Map.find(params[:map_id])
-    map.blocks.create!({:top => 0, :left => 0, :width => 100, :height => 100, :color => params[:color]})
+    map.blocks.create!({:top => 0, :left => 0, :width => 40, :height => 40, :color => params[:color]})
     render :text => 'New Block Created'
   end
 
