@@ -1,10 +1,16 @@
 - content_for :custom_styles do
   %link{:rel => "stylesheet", :type => "text/css", :href => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"}
   = stylesheet_link_tag 'map'
+  = stylesheet_link_tag '../farbtastic/farbtastic.css'
 - content_for :custom_scripts do
   = javascript_include_tag 'map'
+  = javascript_include_tag '../farbtastic/farbtastic.js'
 %div#map-wrapper
   %img{:src => "/images/maps/#{@map.image_url}"}
   %div#blocks
     - @map.blocks.each do |block|
       %div{:data_block_id => block.id, :data_map_id => @map.id, :class => 'block', :style => "height:#{block.height}px; width:#{block.width}px; left:#{block.left}px; top:#{block.top}px; background-color:#{block.color}"}
+%div#commands
+  %input#new-block{:type => 'button', :value => 'New Block', :data_map_id => @map.id}
+  %div#farb
+  %input#current-color{:value => '#000000'}

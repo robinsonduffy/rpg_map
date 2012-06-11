@@ -26,7 +26,7 @@
       <file leaf-file-name="map_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/map_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+            <state line="36" column="35" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/map/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="140" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+            <state line="13" column="84" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="map.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="8" selection-start="720" selection-end="720" vertical-scroll-proportion="0.5208333">
+            <state line="34" column="9" selection-start="996" selection-end="996" vertical-scroll-proportion="0.5208333">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="59" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+            <state line="7" column="2" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="map.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/map.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="49" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+            <state line="5" column="29" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,9 +93,9 @@
         <option value="$PROJECT_DIR$/app/models/blocks.rb" />
         <option value="$PROJECT_DIR$/app/models/maps.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-        <option value="$PROJECT_DIR$/public/stylesheets/map.css" />
         <option value="$PROJECT_DIR$/db/migrate/20120611170126_change_data_type_of_color.rb" />
         <option value="$PROJECT_DIR$/app/views/map/show.html.haml" />
+        <option value="$PROJECT_DIR$/public/stylesheets/map.css" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/map_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/map.js" />
@@ -213,6 +213,38 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="rpg" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.PublicFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.PublicFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="farbtastic" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.FolderSubFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -543,7 +575,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="331" y="136" width="1445" height="1209" extended-state="0" />
+    <frame x="219" y="89" width="1445" height="1209" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -649,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/map.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="49" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20120611170126_change_data_type_of_color.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
@@ -670,30 +695,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/map/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+        <state line="13" column="84" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/map/show.html.haml">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/map.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="140" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+        <state line="5" column="29" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/map_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+        <state line="36" column="35" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="720" selection-end="720" vertical-scroll-proportion="0.5208333">
+        <state line="34" column="9" selection-start="996" selection-end="996" vertical-scroll-proportion="0.5208333">
           <folding />
         </state>
       </provider>

@@ -25,5 +25,30 @@ $(document).ready(function(){
         }
      });
    }
+  }).dblclick(function(){
+    if(confirm("Delete this block?")){
+      $.ajax({
+        type : 'POST',
+        url : '/map/'+$(this).attr('data_map_id')+'/delete/'+$(this).attr('data_block_id'),
+        success : function(){
+          window.location.reload();
+        }
+     });
+    }
+  });
+
+  $("#farb").farbtastic('#current-color')
+
+  $("#new-block").click(function(){
+    $.ajax({
+      type : 'POST',
+      url : '/map/'+$(this).attr('data_map_id')+'/new_block',
+      data : {
+        color : $("#current-color").val()
+      },
+      success : function(){
+       window.location.reload();
+      }
+    });
   });
 });
