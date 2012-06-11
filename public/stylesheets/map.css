@@ -3,4 +3,5 @@
 #blocks {position:absolute; top:0; width:100%; height:100%;}
 .block {position:absolute;}
 
-#commands {margin-top: 30px;}
+#commands {margin-top: 30px; width:350px;}
+#delete-block-wrapper {float:right;}

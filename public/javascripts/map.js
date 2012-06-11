@@ -25,15 +25,17 @@ $(document).ready(function(){
         }
      });
    }
-  }).Touchable().live("doubleTap", function(){
-    if(confirm("Delete this block?")){
-      $.ajax({
-        type : 'POST',
-        url : '/map/'+$(this).attr('data_map_id')+'/delete/'+$(this).attr('data_block_id'),
-        success : function(){
-          window.location.reload();
-        }
-     });
+  }).click(function(){
+    if($("#delete-block:checked").length){
+      if(confirm("Delete this block?")){
+        $.ajax({
+          type : 'POST',
+          url : '/map/'+$(this).attr('data_map_id')+'/delete/'+$(this).attr('data_block_id'),
+          success : function(){
+            window.location.reload();
+          }
+       });
+      }
     }
   });
 
@@ -51,4 +53,6 @@ $(document).ready(function(){
       }
     });
   });
+
+  $("#delete-block").attr("checked", false)
 });
