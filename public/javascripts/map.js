@@ -25,7 +25,7 @@ $(document).ready(function(){
         }
      });
    }
-  }).dblclick(function(){
+  }).Touchable().live("doubleTap", function(){
     if(confirm("Delete this block?")){
       $.ajax({
         type : 'POST',
@@ -35,9 +35,7 @@ $(document).ready(function(){
         }
      });
     }
-  }).Touchable().live("doubleTap", function(){
-            alert('double tap')
-          });
+  });
 
   $("#farb").farbtastic('#current-color')
 
