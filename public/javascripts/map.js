@@ -35,7 +35,7 @@ $(document).ready(function(){
         }
      });
     }
-  }).addTouch();
+  });
 
   $("#farb").farbtastic('#current-color')
 
