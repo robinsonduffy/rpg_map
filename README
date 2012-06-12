@@ -8,9 +8,9 @@ It is optimized for the iPad.
 
 There is currently no backend interface for creating maps.  Rather they have to be created in console.
 
-A map can have an optional image_url that points to an image in the /public/images/map directory.
+A map can have an optional image_url that points to an image in the /public/images/map directory. There is not interface for uploading these images.  They have to be added manually to the filesystem.
 
-A map can have an optional grid_size integer that determines the default dimension (square) of new game blocks created on that map.  There is not interface for uploading these images.  They have to be added manually to the filesystem.
+A map can have an optional grid_size integer that determines the default dimension (square) of new game blocks created on that map.
 
 A map can have an optional title that displays on the index page. Otherwise the map's link is labelled "Map #{map.id}"
 
