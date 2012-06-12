@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120612203451) do
+ActiveRecord::Schema.define(:version => 20120612210436) do
 
   create_table "blocks", :force => true do |t|
     t.integer  "height"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20120612203451) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "grid_size",  :default => 53
+    t.string   "name"
   end
 
 end

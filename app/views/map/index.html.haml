@@ -1,4 +1,4 @@
 %h1 Maps
 %ul
   - @maps.each do |map|
-    %li= link_to "Map #{map.id}", "/map/#{map.id}"
+    %li= link_to map.name || "Map #{map.id}", "/map/#{map.id}"
