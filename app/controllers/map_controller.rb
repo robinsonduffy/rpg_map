@@ -42,4 +42,8 @@ class MapController < ApplicationController
     render :text => map.block_string
   end
 
+  def index
+    @maps = Map.all
+  end
+
 end

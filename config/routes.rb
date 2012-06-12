@@ -1,5 +1,6 @@
 Rpg::Application.routes.draw do
 
+  root :to => "map#index"
   get 'map/:id' => 'map#show'
   post 'map/:map_id/move/:block_id' => 'map#move_block'
   post 'map/:map_id/resize/:block_id' => 'map#resize_block'
