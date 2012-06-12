@@ -16,7 +16,7 @@ $(document).ready(function(){
     });
   });
 
-  setInterval('checkForBlockChanges()', 10000);
+  setInterval('checkForBlockChanges()', 1000);
 });
 
 function checkForBlockChanges(){
