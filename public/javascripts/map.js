@@ -1,4 +1,38 @@
 $(document).ready(function(){
+  setUpBlocks();
+
+  $("#farb").farbtastic('#current-color')
+
+  $("#new-block").click(function(){
+    $.ajax({
+      type : 'POST',
+      url : '/map/'+$(this).attr('data_map_id')+'/new_block',
+      data : {
+        color : $("#current-color").val()
+      },
+      success : function(){
+       checkForBlockChanges();
+      }
+    });
+  });
+
+  setInterval('checkForBlockChanges()', 10000);
+});
+
+function checkForBlockChanges(){
+  $.ajax({
+    type : 'GET',
+    url : '/map/'+$("#new-block").attr('data_map_id')+'/blocks',
+    success : function(data){
+      if(data != $("#block-string").val()){
+        $("#blocks").load('/map/'+$("#new-block").attr('data_map_id')+' #blocks > *')
+        setTimeout("setUpBlocks();",500);
+      }
+    }
+  });
+}
+
+function setUpBlocks(){
   $("#blocks .block").draggable({
     cursor : 'move',
     stop: function(event, ui) {
@@ -32,27 +66,12 @@ $(document).ready(function(){
           type : 'POST',
           url : '/map/'+$(this).attr('data_map_id')+'/delete/'+$(this).attr('data_block_id'),
           success : function(){
-            window.location.reload();
+            checkForBlockChanges();
           }
        });
       }
     }
   });
 
-  $("#farb").farbtastic('#current-color')
-
-  $("#new-block").click(function(){
-    $.ajax({
-      type : 'POST',
-      url : '/map/'+$(this).attr('data_map_id')+'/new_block',
-      data : {
-        color : $("#current-color").val()
-      },
-      success : function(){
-       window.location.reload();
-      }
-    });
-  });
-
   $("#delete-block").attr("checked", false)
-});
+}

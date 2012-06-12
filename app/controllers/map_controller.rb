@@ -36,4 +36,10 @@ class MapController < ApplicationController
     block.delete
     render :text => 'Block Deleted'
   end
+
+  def get_blocks_string
+    map = Map.find(params[:map_id])
+    render :text => map.block_string
+  end
+
 end
