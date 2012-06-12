@@ -43,7 +43,7 @@ class MapController < ApplicationController
   end
 
   def index
-    @maps = Map.all
+    @maps = Map.order('id')
   end
 
 end
