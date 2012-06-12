@@ -6,7 +6,7 @@
   = javascript_include_tag 'map'
   = javascript_include_tag '../farbtastic/farbtastic.js'
 %div#map-wrapper
-  %img{:src => "/images/maps/#{@map.image_url}"}
+  %img{:src => "/images/maps/#{@map.image_url}", :width => '1024'}
   %div#blocks
     %input#block-string{:type => 'hidden', :value => @map.block_string}
     - @map.blocks.each do |block|
