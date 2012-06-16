@@ -7,6 +7,7 @@ Rpg::Application.routes.draw do
   post 'map/:map_id/new_block' => 'map#new_block'
   post 'map/:map_id/delete/:block_id' => 'map#delete_block'
   get 'map/:map_id/blocks' => 'map#get_blocks_string'
+  get 'map/:id/simple' => 'map#simple'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

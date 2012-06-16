@@ -3,6 +3,11 @@ class MapController < ApplicationController
   def show
     @map = Map.find(params[:id])
   end
+  
+  def simple
+    @map = Map.find(params[:id])
+    render :layout => false
+  end
 
   def move_block
     map = Map.find(params[:map_id])

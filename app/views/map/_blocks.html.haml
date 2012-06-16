@@ -1,0 +1,3 @@
+%input#block-string{:type => 'hidden', :value => @map.block_string}
+- @map.blocks.each do |block|
+  %div{:data_block_id => block.id, :data_map_id => @map.id, :class => 'block', :style => "height:#{block.height}px; width:#{block.width}px; left:#{block.left}px; top:#{block.top}px; background-color:#{block.color}"}

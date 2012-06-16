@@ -8,13 +8,12 @@
 %div#map-wrapper
   %img{:src => "/images/maps/#{@map.image_url}", :width => '1024'}
   %div#blocks
-    %input#block-string{:type => 'hidden', :value => @map.block_string}
-    - @map.blocks.each do |block|
-      %div{:data_block_id => block.id, :data_map_id => @map.id, :class => 'block', :style => "height:#{block.height}px; width:#{block.width}px; left:#{block.left}px; top:#{block.top}px; background-color:#{block.color}"}
+    = render "map/blocks"
 %div#commands
   %div#delete-block-wrapper
     %input#delete-block{:type => 'checkbox'}
     %label{:for => 'delete-block'} Delete Block
+  %input#refresh{:type => 'button', :value => 'Refresh Map', :data_map_id => @map.id}
   %input#new-block{:type => 'button', :value => 'New Block', :data_map_id => @map.id}
   %div#farb
   %input#current-color{:value => '#ff0000'}

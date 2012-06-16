@@ -15,8 +15,13 @@ $(document).ready(function(){
       }
     });
   });
+  
+  $("#refresh").click(function(){
+    refresh_blocks();
+  });
 
-  setInterval('checkForBlockChanges()', 1000);
+  //setInterval('checkForBlockChanges()', 1000);
+  setTimer();
 });
 
 function checkForBlockChanges(){
@@ -25,8 +30,9 @@ function checkForBlockChanges(){
     url : '/map/'+$("#new-block").attr('data_map_id')+'/blocks',
     success : function(data){
       if(data != $("#block-string").val()){
-        $("#blocks").load('/map/'+$("#new-block").attr('data_map_id')+' #blocks > *')
-        setTimeout("setUpBlocks();",500);
+        refresh_blocks();
+      }else{
+        setTimer();
       }
     }
   });
@@ -73,5 +79,16 @@ function setUpBlocks(){
     }
   });
 
-  $("#delete-block").attr("checked", false)
+  $("#delete-block").attr("checked", false);
+}
+
+function refresh_blocks(){
+  $("#blocks").load('/map/'+$("#new-block").attr('data_map_id')+'/simple', function(){
+    setUpBlocks();
+    setTimer();
+  });
+}
+
+function setTimer(){
+  setTimeout("checkForBlockChanges()",3000)
 }
